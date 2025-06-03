@@ -1,6 +1,6 @@
 # Digital Library Management System
 
-A secure, full-stack Java application built using **Spring Boot** and **MySQL** for managing a digital library’s core operations — including user authentication, role-based access control, book catalog management, and borrowing functionality.
+A secure, full-stack Java application built using **Spring Boot** and **MySQL** for managing a digital library’s core operations including user authentication, role-based access control, book catalog management, and borrowing functionality.
 
 This project demonstrates my ability to design and maintain robust Java backend systems with a focus on reliability, modularity, and security.
 
