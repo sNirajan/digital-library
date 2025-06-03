@@ -1,8 +1,11 @@
-package com.example.demo;
+package com.digitallibrary.config;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
+
+import com.digitallibrary.model.Book;
+import com.digitallibrary.repository.BookRepository;
 
 @Component
 public class DataInitializer {

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.dto;
 
 public class BorrowingRequest {
     private Long bookId;

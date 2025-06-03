@@ -1,8 +1,10 @@
-package com.example.demo;
+package com.digitallibrary.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
+
+import com.digitallibrary.model.Book;
 
 import java.util.List;
 

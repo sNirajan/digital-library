@@ -4,6 +4,9 @@ import jdk.swing.interop.SwingInterOpUtils;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 
+import com.digitallibrary.model.Borrowing;
+import com.digitallibrary.service.BorrowingService;
+
 public class BorrowingTestRunner {
 
     private final BorrowingService borrowingService;

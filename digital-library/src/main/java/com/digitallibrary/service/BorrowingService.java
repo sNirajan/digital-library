@@ -1,6 +1,13 @@
-package com.example.demo;
+package com.digitallibrary.service;
 
 import org.springframework.stereotype.Service;
+
+import com.digitallibrary.model.Book;
+import com.digitallibrary.model.Borrowing;
+import com.digitallibrary.model.User;
+import com.digitallibrary.repository.BookRepository;
+import com.digitallibrary.repository.BorrowingRepository;
+import com.digitallibrary.repository.UserRepository;
 
 import java.time.LocalDate;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.digitallibrary.config;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

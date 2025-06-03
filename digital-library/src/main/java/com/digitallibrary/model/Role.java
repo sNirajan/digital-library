@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.digitallibrary.model;
 
 public enum Role {
     ROLE_ADMIN,

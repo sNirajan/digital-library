@@ -1,9 +1,12 @@
-package com.example.demo;
+package com.digitallibrary.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import com.digitallibrary.model.User;
+import com.digitallibrary.repository.UserRepository;
 
 @Service
 public class CustomUserDetailsService implements UserDetailsService {

@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.controller;
 
 import jakarta.validation.Valid;
 import org.apache.coyote.Response;
@@ -8,6 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.digitallibrary.model.User;
+import com.digitallibrary.repository.UserRepository;
+
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 

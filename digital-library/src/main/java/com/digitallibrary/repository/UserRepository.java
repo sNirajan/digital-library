@@ -1,6 +1,8 @@
-package com.example.demo;
+package com.digitallibrary.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.digitallibrary.model.User;
 
 import java.util.Optional;
 
