@@ -4,38 +4,30 @@ import axios from 'axios';
 function BooksPage() {
   const [books, setBooks] = useState([]);
 
-  // Fetch books from backend
   const fetchBooks = () => {
     axios.get('http://localhost:8080/books')
       .then(res => setBooks(res.data))
       .catch(err => console.error("Error fetching books:", err));
   };
 
-  // Call once on mount
   useEffect(() => {
-  axios.get('http://localhost:8080/books')
-    .then(res => {
-      console.log("Books fetched:", res.data); // 👈 this line
-      setBooks(res.data);
-    })
-    .catch(err => console.error("Error fetching books:", err));
-}, []);
+    fetchBooks();
+  }, []);
 
-  // Handle borrowing a book
   const handleBorrow = (bookId) => {
-    const userId = 1; // 👤 Hardcoded user ID (to be replaced with real login later)
+    const userId = 1; // Temporary placeholder until login is added
 
     axios.post('http://localhost:8080/borrowings', {
       userId,
       bookId
     })
     .then(res => {
-      alert(`Book borrowed! Transaction ID: ${res.data.id}`);
-      fetchBooks(); // Refresh the list after borrowing
+      alert(`✅ Book borrowed! Transaction ID: ${res.data.id}`);
+      fetchBooks(); // Refresh availability
     })
     .catch(err => {
-      console.error("Borrowing failed:", err);
-      alert("Failed to borrow the book.");
+      console.error("❌ Borrowing failed:", err);
+      alert("Borrowing failed.");
     });
   };
 
