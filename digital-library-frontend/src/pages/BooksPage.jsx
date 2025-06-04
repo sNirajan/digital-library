@@ -17,16 +17,16 @@ function BooksPage() {
   const handleBorrow = (bookId) => {
     const userId = 1; // Temporary placeholder until login is added
 
-    axios.post('http://localhost:8080/borrowings', {
+    axios.post('http://localhost:8080/borrowing', {
       userId,
       bookId
     })
     .then(res => {
-      alert(`✅ Book borrowed! Transaction ID: ${res.data.id}`);
+      alert(` Book borrowed! Transaction ID: ${res.data.id}`);
       fetchBooks(); // Refresh availability
     })
     .catch(err => {
-      console.error("❌ Borrowing failed:", err);
+      console.error(" Borrowing failed:", err);
       alert("Borrowing failed.");
     });
   };
