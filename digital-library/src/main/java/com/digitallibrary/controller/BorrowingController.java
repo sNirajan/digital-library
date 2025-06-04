@@ -1,13 +1,13 @@
-package com.controller;
+package com.digitallibrary.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.digitallibrary.dto.BorrowingRequest;
 import com.digitallibrary.model.Borrowing;
 import com.digitallibrary.service.BorrowingService;
-import com.dto.BorrowingRequest;
 
 import java.util.List;
 

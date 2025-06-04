@@ -1,4 +1,4 @@
-package com.dto;
+package com.digitallibrary.dto;
 
 public class BorrowingRequest {
     private Long bookId;

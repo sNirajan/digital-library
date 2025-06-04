@@ -1,4 +1,4 @@
-package com.controller;
+package com.digitallibrary.controller;
 
 import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;

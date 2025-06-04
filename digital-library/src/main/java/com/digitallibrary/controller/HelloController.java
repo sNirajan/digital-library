@@ -1,4 +1,4 @@
-package com.controller;
+package com.digitallibrary.controller;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
